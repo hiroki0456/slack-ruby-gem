@@ -51,7 +51,7 @@ module Slack
       # @see https://github.com/aki017/slack-api-docs/blob/master/methods/channels.history.json
       def channels_history(options={})
         throw ArgumentError.new("Required arguments :channel missing") if options[:channel].nil?
-        post("channels.history", options)
+        post("conversations.history", options)
       end
 
       #
